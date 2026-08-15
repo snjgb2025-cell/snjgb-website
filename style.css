@@ -637,3 +637,59 @@ footer {
   }
 
 }
+/* PARCEIROS */
+
+#parceiros {
+  background: #ffffff;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.partner-card {
+  padding: 30px 25px;
+  border: 1px solid #dce6df;
+  border-radius: 18px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.partner-card h3 {
+  margin-bottom: 10px;
+  color: #04552d;
+  font-size: 20px;
+}
+
+.partner-card p {
+  color: #68756e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* PARCEIROS NO TELEMÓVEL */
+
+@media (max-width: 850px) {
+
+  .partners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .partners {
+    grid-template-columns: 1fr;
+  }
+
+}
