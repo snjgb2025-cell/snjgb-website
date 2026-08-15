@@ -737,21 +737,179 @@
 </section>
 
 
-<!-- ASSOCIADO -->
+<!
+
+  <!-- ASSOCIADO -->
 
 <section id="associado" class="join">
 
   <div class="container">
 
-    <h2>Faça parte do SNJ-GB</h2>
+    <div class="section-head">
+      <p class="eyebrow">FAÇA PARTE DO SNJ-GB</p>
+      <h2>Torne-se Associado</h2>
 
-    <p>
-      Juntos somos mais fortes para defender a dignidade e os direitos dos jogadores.
-    </p>
+      <p>
+        Junte-se ao Sindicato Nacional dos Jogadores de Futebol da
+        Guiné-Bissau e faça parte da construção de um futebol mais
+        profissional, justo e digno.
+      </p>
+    </div>
 
-    <a class="btn primary" href="#contactos">
-      Quero ser associado
-    </a>
+    <div class="membership-grid">
+
+      <div class="membership-info">
+
+        <h3>Por que ser associado?</h3>
+
+        <p>
+          O SNJ-GB trabalha para defender os direitos, interesses e
+          dignidade dos jogadores de futebol da Guiné-Bissau.
+        </p>
+
+        <ul>
+          <li>⚖️ Defesa dos direitos profissionais</li>
+          <li>📄 Orientação sobre contratos</li>
+          <li>🛡️ Apoio e assistência jurídica</li>
+          <li>🎓 Formação e capacitação profissional</li>
+          <li>🤝 Apoio e solidariedade</li>
+          <li>⚽ Representação dos jogadores</li>
+        </ul>
+
+        <div class="membership-fee">
+          <strong>Cartão de associado</strong>
+          <span>2.500 FCFA</span>
+        </div>
+
+      </div>
+
+      <form
+        class="membership-form"
+        onsubmit="event.preventDefault(); alert('Obrigado pelo seu interesse em fazer parte do SNJ-GB. O pedido será encaminhado para análise.');"
+      >
+
+        <h3>Pedido de Associação</h3>
+
+        <label for="nome">
+          Nome completo
+        </label>
+
+        <input
+          id="nome"
+          name="nome"
+          type="text"
+          required
+          placeholder="Digite o seu nome completo"
+        >
+
+        <label for="telefone">
+          Telefone
+        </label>
+
+        <input
+          id="telefone"
+          name="telefone"
+          type="tel"
+          required
+          placeholder="+245 XXX XXX XXX"
+        >
+
+        <label for="email">
+          E-mail
+        </label>
+
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="seuemail@example.com"
+        >
+
+        <label for="regiao">
+          Região
+        </label>
+
+        <select id="regiao" name="regiao" required>
+
+          <option value="">
+            Selecione a região
+          </option>
+
+          <option>SAB</option>
+          <option>Biombo</option>
+          <option>Oio</option>
+          <option>Cacheu</option>
+          <option>Bafatá</option>
+          <option>Gabú</option>
+          <option>Quinara</option>
+          <option>Tombali</option>
+          <option>Bolama</option>
+          <option>Diáspora África</option>
+          <option>Diáspora Europa</option>
+
+        </select>
+
+        <label for="clube">
+          Clube atual
+        </label>
+
+        <input
+          id="clube"
+          name="clube"
+          type="text"
+          placeholder="Nome do clube"
+        >
+
+        <label for="posicao">
+          Posição em campo
+        </label>
+
+        <select id="posicao" name="posicao">
+
+          <option value="">
+            Selecione a posição
+          </option>
+
+          <option>Guarda-redes</option>
+          <option>Defesa</option>
+          <option>Médio</option>
+          <option>Avançado</option>
+
+        </select>
+
+        <label for="tipo">
+          Situação
+        </label>
+
+        <select id="tipo" name="tipo" required>
+
+          <option value="">
+            Selecione
+          </option>
+
+          <option>Jogador profissional</option>
+          <option>Jogador amador</option>
+          <option>Ex-jogador</option>
+
+        </select>
+
+        <label for="mensagem">
+          Observações
+        </label>
+
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          placeholder="Escreva uma mensagem, se necessário"
+        ></textarea>
+
+        <button type="submit" class="btn primary">
+          Enviar pedido de associação
+        </button>
+
+      </form>
+
+    </div>
 
   </div>
 
