@@ -756,3 +756,153 @@ footer {
   }
 
 }
+/* FORMULÁRIO DE ASSOCIADO */
+
+#associado {
+  background: #08783f;
+  color: #ffffff;
+}
+
+#associado .section-head {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#associado .section-head h2 {
+  color: #ffffff;
+}
+
+#associado .section-head > p:last-child {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.membership-info,
+.membership-form {
+  padding: 32px;
+  border-radius: 20px;
+}
+
+.membership-info {
+  background: #04552d;
+}
+
+.membership-info h3,
+.membership-form h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.membership-info p {
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.membership-info ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.membership-info li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.membership-fee {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 18px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.membership-fee strong {
+  font-size: 14px;
+}
+
+.membership-fee span {
+  color: #f5c400;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.membership-form {
+  display: grid;
+  gap: 10px;
+  background: #ffffff;
+  color: #26352d;
+}
+
+.membership-form h3 {
+  color: #04552d;
+}
+
+.membership-form label {
+  margin-top: 5px;
+  color: #26352d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.membership-form input,
+.membership-form select,
+.membership-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dce6df;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #26352d;
+  outline: none;
+}
+
+.membership-form input:focus,
+.membership-form select:focus,
+.membership-form textarea:focus {
+  border-color: #08783f;
+}
+
+.membership-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.membership-form .btn {
+  margin-top: 10px;
+  border: 0;
+}
+
+/* FORMULÁRIO NO TELEMÓVEL */
+
+@media (max-width: 850px) {
+
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .membership-info,
+  .membership-form {
+    padding: 22px;
+  }
+
+  .membership-info h3,
+  .membership-form h3 {
+    font-size: 21px;
+  }
+
+}
