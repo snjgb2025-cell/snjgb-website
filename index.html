@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="pt">
+  <link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#00552b">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -8,7 +10,15 @@
   <title>SNJ-GB | Sindicato Nacional dos Jogadores de Futebol da Guiné-Bissau</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/sw.js")
+        .then(() => console.log("SNJ-GB App ativado"))
+        .catch((error) => console.error("Erro ao ativar o App:", error));
+    });
+  }
+</script>
 <body>
 
 <header>
