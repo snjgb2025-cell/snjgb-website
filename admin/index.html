@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Painel Administrativo | SNJ-GB</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f5f3;
+      color: #111111;
+    }
+
+    header {
+      background: #00552b;
+      color: #ffffff;
+      padding: 22px;
+      border-bottom: 5px solid #fcd116;
+    }
+
+    .header-content {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #ce1126;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .brand h1 {
+      font-size: 21px;
+    }
+
+    .brand p {
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    .admin-label {
+      font-size: 13px;
+      font-weight: bold;
+      color: #fcd116;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 45px auto;
+      padding: 0 20px;
+    }
+
+    .welcome {
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      color: #00552b;
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+
+    .welcome p {
+      color: #666666;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid #e1e4e1;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #00552b;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666666;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: #00843d;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #00552b;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding: 25px;
+      background: #111111;
+      color: #ffffff;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer strong {
+      color: #fcd116;
+    }
+
+    @media (max-width: 750px) {
+
+      .header-content {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .dashboard {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        margin-top: 30px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+
+    <div class="brand">
+      <div class="logo">⚽</div>
+
+      <div>
+        <h1>SNJ-GB</h1>
+        <p>Sindicato Nacional dos Jogadores de Futebol da Guiné-Bissau</p>
+      </div>
+    </div>
+
+    <div class="admin-label">
+      PAINEL ADMINISTRATIVO
+    </div>
+
+  </div>
+</header>
+
+<main>
+
+  <div class="welcome">
+    <h2>Bem-vindo ao Painel do SNJ-GB</h2>
+
+    <p>
+      Área reservada para gestão e atualização do conteúdo institucional
+      do Sindicato Nacional dos Jogadores de Futebol da Guiné-Bissau.
+    </p>
+  </div>
+
+  <div class="dashboard">
+
+    <div class="card">
+      <div class="icon">📰</div>
+      <h3>Notícias</h3>
+      <p>Publicar e editar notícias e comunicados do SNJ-GB.</p>
+      <a href="#" class="button">Gerir notícias</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📸</div>
+      <h3>Fotografias</h3>
+      <p>Adicionar e organizar fotografias do sindicato.</p>
+      <a href="#" class="button">Gerir fotos</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🤝</div>
+      <h3>Parceiros</h3>
+      <p>Gerir parceiros e organizações associadas ao SNJ-GB.</p>
+      <a href="#" class="button">Gerir parceiros</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📄</div>
+      <h3>Documentos</h3>
+      <p>Adicionar estatutos, regulamentos e comunicados.</p>
+      <a href="#" class="button">Gerir documentos</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📅</div>
+      <h3>Agenda</h3>
+      <p>Atualizar eventos e atividades do sindicato.</p>
+      <a href="#" class="button">Gerir agenda</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Configurações</h3>
+      <p>Configurações gerais do painel administrativo.</p>
+      <a href="#" class="button">Configurações</a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <strong>SNJ-GB</strong><br>
+  Defender · Representar · Valorizar
+</footer>
+
+</body>
+  </html>
