@@ -536,3 +536,104 @@ footer {
   }
 
   }
+/* MENSAGEM DO PRESIDENTE */
+
+.presidente {
+  background: #ffffff;
+}
+
+.presidente-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.presidente-foto {
+  position: sticky;
+  top: 110px;
+}
+
+.presidente-placeholder {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #04552d, #08783f);
+  color: #f5c400;
+  font-size: 28px;
+  font-weight: 800;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.presidente-text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.presidente-text p {
+  margin-bottom: 18px;
+}
+
+.presidente-text blockquote {
+  margin: 30px 0;
+  padding: 25px 30px;
+  border-left: 5px solid #f5c400;
+  border-radius: 0 15px 15px 0;
+  background: #f4f8f5;
+  color: #04552d;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.assinatura {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #dce6df;
+}
+
+.assinatura strong {
+  color: #04552d;
+  font-size: 19px;
+}
+
+.assinatura span {
+  color: #68756e;
+  font-size: 14px;
+}
+
+/* RESPONSIVIDADE DA MENSAGEM */
+
+@media (max-width: 850px) {
+
+  .presidente-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .presidente-foto {
+    position: static;
+  }
+
+  .presidente-placeholder {
+    min-height: 260px;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .presidente-text {
+    font-size: 15px;
+  }
+
+  .presidente-text blockquote {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+}
