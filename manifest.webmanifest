@@ -1,0 +1,12 @@
+{
+  "name": "SNJ-GB — Sindicato Nacional dos Jogadores de Futebol da Guiné-Bissau",
+  "short_name": "SNJ-GB",
+  "description": "Site oficial do Sindicato Nacional dos Jogadores de Futebol da Guiné-Bissau.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00552b",
+  "orientation": "portrait",
+  "lang": "pt",
+  "scope": "/"
+}
